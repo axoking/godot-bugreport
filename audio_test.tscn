@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dx6whj4ct1cx1"]
+
+[ext_resource type="Script" uid="uid://c01x88v4lo4j0" path="res://play_tone.gd" id="1_k7ygm"]
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_k7ygm"]
+
+[node name="Control" type="Control" unique_id=560524]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k7ygm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1231417511]
+stream = SubResource("AudioStreamGenerator_k7ygm")
